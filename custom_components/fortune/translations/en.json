@@ -1,0 +1,138 @@
+{
+    "title": "Naver Shopping",
+    "config": {
+        "step": {
+            "user": {
+                "data": {},
+                "description": "Enter Naver Shopping API account information"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "setting zodiac constellation fortune sensor",
+                "description": "Set up the sensor you want to add.",
+                "data": {
+                    "zodiac": "12 zodiac",
+                    "constellation": "constellation",
+                    "refresh_interval": "refresh interval",
+                    "enable_today": "add property today fortune",
+                    "enable_tomorrow": "add property tomorrow fortune",
+                    "enable_week": "add property week fortune",
+                    "enable_month": "add property month fortune"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "Rat": {
+                "name": "Rat"
+            },
+            "Ox": {
+                "name": "Ox"
+            },
+            "Tiger": {
+                "name": "Tiger"
+            },
+            "Rabbit": {
+                "name": "Rabbit"
+            },
+            "Dragon": {
+                "name": "Dragon"
+            },
+            "Snake": {
+                "name": "Snake"
+            },
+            "Horse": {
+                "name": "Horse"
+            },
+            "Lamb": {
+                "name": "Lamb"
+            },
+            "Monkey": {
+                "name": "Monkey"
+            },
+            "Rooster": {
+                "name": "Rooster"
+            },
+            "Dog": {
+                "name": "Dog"
+            },
+            "Pig": {
+                "name": "Pig"
+            },
+            "Aquarius": {
+                "name": "Aquarius"
+            },
+            "Pisces": {
+                "name": "Pisces"
+            },
+            "Aries": {
+                "name": "Aries"
+            },
+            "Taurus": {
+                "name": "Taurus"
+            },
+            "Gemini": {
+                "name": "Gemini"
+            },
+            "Cancer": {
+                "name": "Cancer"
+            },
+            "Leo": {
+                "name": "Leo"
+            },
+            "Virgo": {
+                "name": "Virgo"
+            },
+            "Libra": {
+                "name": "Libra"
+            },
+            "Scorpio": {
+                "name": "Scorpio"
+            },
+            "Sagittarius": {
+                "name": "Sagittarius"
+            },
+            "Capricorn": {
+                "name": "Capricorn"
+            }
+        }
+    },
+    "selector": {
+        "zodiac": {
+            "options": {
+                "RAT": "Rat",
+                "OX": "Ox",
+                "TIGER": "Tiger",
+                "RABBIT": "Rabbit",
+                "DRAGON": "Dragon",
+                "SNAKE": "Snake",
+                "HORES": "Horse",
+                "LAMB": "Lamb",
+                "MONKEY": "Monkey",
+                "ROOSTER": "Rooster",
+                "DOG": "Dog",
+                "PIG": "Pig"
+            }
+        },
+        "constellation": {
+            "options": {
+                "Aquarius": "Aquarius",
+                "Pisces": "Pisces",
+                "Aries": "Aries",
+                "Taurus": "Taurus",
+                "Gemini": "Gemini",
+                "Cancer": "Cancer",
+                "Leo": "Leo",
+                "Virgo": "Virgo",
+                "Libra": "Libra",
+                "Scorpio": "Scorpio",
+                "Sagittarius": "Sagittarius",
+                "Capricorn": "Capricorn"
+            }
+        }
+    }
+}

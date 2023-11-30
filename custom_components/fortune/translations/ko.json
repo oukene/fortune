@@ -1,0 +1,138 @@
+{
+    "title": "\ub760\ubcc4,\ubcc4\uc790\ub9ac \uc6b4\uc138",
+    "config": {
+        "step": {
+            "user": {
+                "data": {},
+                "description": "\ud655\uc778\uc744 \ub204\ub974\uba74 \uc124\uce58\ub97c \uc644\ub8cc\ud569\ub2c8\ub2e4"
+            }
+        }
+    },
+    "options": {
+        "step": {
+            "init": {
+                "title": "\ub760\ubcc4,\ubcc4\uc790\ub9ac \uc6b4\uc138 \uc124\uc815",
+                "description": "\ucd94\uac00\ud560 \uc6b4\uc138 \uc13c\uc11c\ub97c \uc124\uc815\ud558\uc138\uc694",
+                "data": {
+                    "zodiac": "12\uac04\uc9c0 \ubaa9\ub85d",
+                    "constellation": "\ubcc4\uc790\ub9ac \ubaa9\ub85d",
+                    "refresh_interval": "\uac31\uc2e0 \uc8fc\uae30(\ubd84)",
+                    "enable_today": "\uc624\ub298 \uc6b4\uc138\ub97c \ucd94\uac00\ud569\ub2c8\ub2e4",
+                    "enable_tomorrow": "\ub0b4\uc77c \uc6b4\uc138\ub97c \ucd94\uac00\ud569\ub2c8\ub2e4",
+                    "enable_week": "\uc774\ubc88\uc8fc \uc6b4\uc138\ub97c \ucd94\uac00\ud569\ub2c8\ub2e4",
+                    "enable_month": "\uc774\ubc88\ub2ec \uc6b4\uc138\ub97c \ucd94\uac00\ud569\ub2c8\ub2e4"
+                }
+            }
+        }
+    },
+    "entity": {
+        "sensor": {
+            "Rat": {
+                "name": "\uc950\ub760"
+            },
+            "Ox": {
+                "name": "\uc18c\ub760"
+            },
+            "Tiger": {
+                "name": "\ud638\ub791\uc774\ub760"
+            },
+            "Rabbit": {
+                "name": "\ud1a0\ub07c\ub760"
+            },
+            "Dragon": {
+                "name": "\uc6a9\ub760"
+            },
+            "Snake": {
+                "name": "\ubc40\ub760"
+            },
+            "Horse": {
+                "name": "\ub9d0\ub760"
+            },
+            "Lamb": {
+                "name": "\uc591\ub760"
+            },
+            "Monkey": {
+                "name": "\uc6d0\uc22d\uc774\ub760"
+            },
+            "Rooster": {
+                "name": "\ub2ed\ub760"
+            },
+            "Dog": {
+                "name": "\uac1c\ub760"
+            },
+            "Pig": {
+                "name": "\ub3fc\uc9c0\ub760"
+            },
+            "Aquarius": {
+                "name": "\ubb3c\ubcd1\uc790\ub9ac"
+            },
+            "Pisces": {
+                "name": "\ubb3c\uace0\uae30\uc790\ub9ac"
+            },
+            "Aries": {
+                "name": "\uc591\uc790\ub9ac"
+            },
+            "Taurus": {
+                "name": "\ud669\uc18c\uc790\ub9ac"
+            },
+            "Gemini": {
+                "name": "\uc30d\ub465\uc774\uc790\ub9ac"
+            },
+            "Cancer": {
+                "name": "\uac8c\uc790\ub9ac"
+            },
+            "Leo": {
+                "name": "\uc0ac\uc790\uc790\ub9ac"
+            },
+            "Virgo": {
+                "name": "\ucc98\ub140\uc790\ub9ac"
+            },
+            "Libra": {
+                "name": "\ucc9c\uce6d\uc790\ub9ac"
+            },
+            "Scorpio": {
+                "name": "\uc804\uac08\uc790\ub9ac"
+            },
+            "Sagittarius": {
+                "name": "\uc0ac\uc218\uc790\ub9ac"
+            },
+            "Capricorn": {
+                "name": "\uc5fc\uc18c\uc790\ub9ac"
+            }
+        }
+    },
+    "selector": {
+        "zodiac": {
+            "options": {
+                "Rat": "\uc950",
+                "Ox": "\uc18c",
+                "Tiger": "\ud638\ub791\uc774",
+                "Rabbit": "\ud1a0\ub07c",
+                "Dragon": "\uc6a9",
+                "Snake": "\ubc40",
+                "Horse": "\ub9d0",
+                "Lamb": "\uc591",
+                "Monkey": "\uc6d0\uc22d\uc774",
+                "Rooster": "\ub2ed",
+                "Dog": "\uac1c",
+                "Pig": "\ub3fc\uc9c0"
+            }
+        },
+        "constellation": {
+            "options": {
+                "Aquarius": "\ubb3c\ubcd1\uc790\ub9ac",
+                "Pisces": "\ubb3c\uace0\uae30\uc790\ub9ac",
+                "Aries": "\uc591\uc790\ub9ac",
+                "Taurus": "\ud669\uc18c\uc790\ub9ac",
+                "Gemini": "\uc30d\ub465\uc774\uc790\ub9ac",
+                "Cancer": "\uac8c\uc790\ub9ac",
+                "Leo": "\uc0ac\uc790\uc790\ub9ac",
+                "Virgo": "\ucc98\ub140\uc790\ub9ac",
+                "Libra": "\ucc9c\uce6d\uc790\ub9ac",
+                "Scorpio": "\uc804\uac08\uc790\ub9ac",
+                "Sagittarius": "\uad81\uc218\uc790\ub9ac",
+                "Capricorn": "\uc5fc\uc18c\uc790\ub9ac"
+            }
+        }
+    }
+}

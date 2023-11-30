@@ -1,0 +1,16 @@
+{
+  "domain": "fortune",
+  "name": "fortune",
+  "config_flow": true,
+  "documentation": "https://github.com/oukene/fortune",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": [
+    "@oukene"
+  ],
+  "iot_class": "cloud_polling",
+  "version": "1.0.0"
+}

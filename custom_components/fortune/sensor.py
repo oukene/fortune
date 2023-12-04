@@ -20,6 +20,7 @@ import aiohttp
 import asyncio
 from bs4 import BeautifulSoup as bs
 import random
+from datetime import datetime
 
 
 _LOGGER = logging.getLogger(__name__)
@@ -197,6 +198,7 @@ class FortuneSensor(SensorBase):
     async def get_fortune(self):
         try:
             """"""
+            self._attr_state = None
             url = BASE_URL + self.data_list[self._key]["kr_name"]
             _LOGGER.debug("url : " + str(url))
             _LOGGER.debug("total size : " + str(total_size))
@@ -229,7 +231,7 @@ class FortuneSensor(SensorBase):
                                 #     break
                                 total_size
                         index+=1
-            self._attr_state = "complete"
+            self._attr_state = datetime.now().strftime("%Y-%m-%d %H:%M")
             self._device.publish_updates()
         except Exception as e:
             _LOGGER.error("get fortune error : " + str(e))

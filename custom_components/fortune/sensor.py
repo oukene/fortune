@@ -198,12 +198,16 @@ class FortuneSensor(SensorBase):
     async def get_fortune(self):
         try:
             """"""
+            headers = {
+                'user-agent': DOMAIN
+            }
+
             self._attr_state = None
             url = BASE_URL + self.data_list[self._key]["kr_name"]
             _LOGGER.debug("url : " + str(url))
             _LOGGER.debug("total size : " + str(total_size))
             await asyncio.sleep(random.randrange(1, total_size))
-            async with aiohttp.ClientSession() as session:
+            async with aiohttp.ClientSession(headers=headers) as session:
                 async with session.get(url) as response:
                     raw_data = await response.read()
                     soup = bs(raw_data, 'html.parser')

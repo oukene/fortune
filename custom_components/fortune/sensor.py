@@ -199,7 +199,12 @@ class FortuneSensor(SensorBase):
         try:
             """"""
             headers = {
-                'user-agent': DOMAIN
+                "User-Agent": (
+                    "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/78.0.3904.70 safari/537.36"
+                ),
+                "Referer": (
+                    "https://naver.com"
+                )
             }
 
             self._attr_state = None

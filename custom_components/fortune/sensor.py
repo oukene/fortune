@@ -201,9 +201,6 @@ class FortuneSensor(SensorBase):
             headers = {
                 "User-Agent": (
                     "mozilla/5.0 (windows nt 10.0; win64; x64) applewebkit/537.36 (khtml, like gecko) chrome/78.0.3904.70 safari/537.36"
-                ),
-                "Referer": (
-                    "https://naver.com"
                 )
             }
 
@@ -211,9 +208,10 @@ class FortuneSensor(SensorBase):
             url = BASE_URL + self.data_list[self._key]["kr_name"]
             _LOGGER.debug("url : " + str(url))
             _LOGGER.debug("total size : " + str(total_size))
-            await asyncio.sleep(random.randrange(1, total_size))
+            await asyncio.sleep(random.randrange(total_size, total_size*10))
+            
             async with aiohttp.ClientSession(headers=headers) as session:
-                async with session.get(url) as response:
+                async with session.get(url, headers=headers, timeout=30) as response:
                     raw_data = await response.read()
                     soup = bs(raw_data, 'html.parser')
                     index = 0

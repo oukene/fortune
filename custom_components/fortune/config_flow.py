@@ -61,7 +61,6 @@ class OptionsFlowHandler(config_entries.OptionsFlow):
     """Handles options flow for the component."""
 
     def __init__(self, config_entry) -> None:
-        self.config_entry = config_entry
         self._selected_option = {}
         # self.data = {}
         # self.data[CONF_ZODIAC] = config_entry.options.get(CONF_ZODIAC, [])
